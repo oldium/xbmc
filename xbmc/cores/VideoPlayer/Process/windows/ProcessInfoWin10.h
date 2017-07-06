@@ -22,6 +22,9 @@
 #include "cores/IPlayer.h"
 #include "../ProcessInfo.h"
 
+namespace VIDEOPLAYER
+{
+
 class CProcessInfoWin10 : public CProcessInfo
 {
 public:
@@ -30,3 +33,5 @@ public:
 
   EINTERLACEMETHOD GetFallbackDeintMethod() override;
 };
+
+}

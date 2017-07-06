@@ -22,6 +22,9 @@
 #include "cores/IPlayer.h"
 #include "../ProcessInfo.h"
 
+namespace VIDEOPLAYER
+{
+
 class CProcessInfoWin : public CProcessInfo
 {
 public:
@@ -31,3 +34,5 @@ public:
   EINTERLACEMETHOD GetFallbackDeintMethod() override;
   std::vector<AVPixelFormat> GetRenderFormats() override;
 };
+
+}
